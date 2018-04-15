@@ -5,4 +5,17 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Datatbase\" />
+    <Folder Include="Models\" />
+    <Folder Include="Scraper\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.Entity" Version="6.10.6" />
+    <PackageReference Include="MySql.Data" Version="6.10.6" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Scraper\Program.cs" />
+  </ItemGroup>
 </Project>
